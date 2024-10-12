@@ -8,9 +8,28 @@ import Footer from "./components/Footer";
 
 import * as Sentry from "@sentry/react";
 
+// const App = () => {
+//   return (
+//     <main className="bg-black">
+//       <Navbar />
+//       <Hero />
+//       <Highlights />
+//       <Model />
+//       <Features />
+//       <HowItWorks />
+//       <Footer />
+//     </main>
+//   );
+// };
+
+// export default Sentry.withProfiler(App);
+
 const App = () => {
   return (
-    <main className="bg-black">
+    <main
+      className="bg-black"
+      style={{ overflowY: "auto", overflowX: "hidden" }}
+    >
       <Navbar />
       <Hero />
       <Highlights />
